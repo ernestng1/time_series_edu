@@ -88,14 +88,14 @@ export default function Sidebar({ state, dispatch, setActiveInteraction, classNa
   };
 
   return (
-    <div className={`w-full lg:w-80 h-full bg-slate-50 dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 flex flex-col p-4 overflow-x-hidden overflow-y-auto transition-colors duration-200 ${className}`}>
+    <div className={`w-full lg:w-80 h-full bg-slate-50 dark:bg-slate-900 border-r border-slate-200 dark:border-slate-800 flex flex-col p-4 overflow-x-hidden transition-colors duration-200 ${className}`}>
       
       <div className="mb-6 flex items-center gap-2 shrink-0">
         <Settings2 className="w-5 h-5 text-slate-400 dark:text-slate-500" />
         <h2 className="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Model Parameters</h2>
       </div>
 
-      <div className="flex-1 overflow-y-auto overflow-x-hidden pb-4 space-y-3">
+      <div className="flex-1 overflow-y-scroll overflow-x-hidden pb-4 space-y-3 pr-1">
         {/* Model Selection */}
         <AccordionItem
           id="model"
