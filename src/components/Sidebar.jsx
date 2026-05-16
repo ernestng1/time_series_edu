@@ -302,6 +302,12 @@ export default function Sidebar({ state, dispatch, setActiveInteraction, classNa
           {children}
         </div>
       )}
+
+      <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-800 shrink-0 text-center pb-1">
+        <p className="text-[11px] text-slate-400 dark:text-slate-500">
+          A project by <span className="font-semibold text-slate-500 dark:text-slate-400">Ernest Ng</span>
+        </p>
+      </div>
     </div>
   );
 }
