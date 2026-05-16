@@ -17,7 +17,7 @@ export function EducationalTooltip({ title, content }) {
 
 const AccordionItem = ({ id, title, icon: Icon, isOpen, onToggle, children, tooltip, hasToggle, isActive, onActiveToggle }) => {
   return (
-    <div className="border border-slate-200 dark:border-slate-700 rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-colors duration-200 w-full max-w-full">
+    <div className="border border-slate-200 dark:border-slate-700 rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-colors duration-200 w-full max-w-full relative z-10 hover:z-50">
       <div className="w-full flex items-center justify-between bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors pr-4 pl-3 py-2">
         
         <div className="flex items-center gap-3">
