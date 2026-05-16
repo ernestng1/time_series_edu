@@ -95,7 +95,7 @@ export default function Sidebar({ state, dispatch, setActiveInteraction, classNa
         <h2 className="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">Model Parameters</h2>
       </div>
 
-      <div className="flex-1 overflow-y-scroll overflow-x-hidden pb-4 space-y-3 pr-1">
+      <div className="flex-1 overflow-y-auto overflow-x-hidden pb-4 space-y-3 no-scrollbar">
         {/* Model Selection */}
         <AccordionItem
           id="model"
