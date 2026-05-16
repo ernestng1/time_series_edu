@@ -6,10 +6,10 @@ export function EducationalTooltip({ title, content }) {
   return (
     <div className="group relative inline-flex items-center justify-center cursor-help">
       <HelpCircle className="w-4 h-4 text-slate-400 dark:text-slate-500 group-hover:text-primary-500 dark:group-hover:text-primary-400 transition-colors ml-1" />
-      <div className="absolute bottom-full right-0 mb-2 w-60 p-3 bg-slate-800 dark:bg-slate-700 text-white text-sm rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
+      <div className="absolute top-full right-0 mt-2 w-60 p-3 bg-slate-800 dark:bg-slate-700 text-white text-sm rounded-lg shadow-xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-50">
         <strong className="block mb-1 text-primary-300 dark:text-primary-400">{title}</strong>
         <p className="text-slate-300 dark:text-slate-200 leading-relaxed">{content}</p>
-        <div className="absolute top-full right-2 -mt-1 border-4 border-transparent border-t-slate-800 dark:border-t-slate-700"></div>
+        <div className="absolute bottom-full right-2 -mb-1 border-4 border-transparent border-b-slate-800 dark:border-b-slate-700"></div>
       </div>
     </div>
   );
@@ -17,7 +17,7 @@ export function EducationalTooltip({ title, content }) {
 
 const AccordionItem = ({ id, title, icon: Icon, isOpen, onToggle, children, tooltip, hasToggle, isActive, onActiveToggle }) => {
   return (
-    <div className="border border-slate-200 dark:border-slate-700 rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-colors duration-200 overflow-hidden w-full max-w-full">
+    <div className="border border-slate-200 dark:border-slate-700 rounded-xl bg-white dark:bg-slate-800 shadow-sm transition-colors duration-200 w-full max-w-full">
       <div className="w-full flex items-center justify-between bg-slate-50 dark:bg-slate-800/50 hover:bg-slate-100 dark:hover:bg-slate-700 transition-colors pr-4 pl-3 py-2">
         
         <div className="flex items-center gap-3">
