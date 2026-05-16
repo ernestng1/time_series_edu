@@ -305,7 +305,7 @@ export default function Sidebar({ state, dispatch, setActiveInteraction, classNa
 
       <div className="mt-4 pt-4 border-t border-slate-200 dark:border-slate-800 shrink-0 text-center pb-1">
         <p className="text-[11px] text-slate-400 dark:text-slate-500">
-          A project by <span className="font-semibold text-slate-500 dark:text-slate-400">Ernest Ng</span>
+          A project by <a href="https://www.linkedin.com/in/ernestngweijun/" target="_blank" rel="noopener noreferrer" className="font-semibold text-slate-500 dark:text-slate-400 hover:text-primary-500 dark:hover:text-primary-400 transition-colors">Ernest Ng</a>
         </p>
       </div>
     </div>
